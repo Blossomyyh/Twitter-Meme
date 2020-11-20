@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		0C08EE192568004300F643EC /* BlossomMeme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EE172568004300F643EC /* BlossomMeme.xcdatamodeld */; };
 		0C08EE242568004400F643EC /* BlossomMemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EE232568004400F643EC /* BlossomMemeTests.swift */; };
 		0C08EE2F2568004400F643EC /* BlossomMemeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EE2E2568004400F643EC /* BlossomMemeUITests.swift */; };
+		0C08EE4425681D5000F643EC /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EE4325681D5000F643EC /* BlurView.swift */; };
+		0C08EE49256820B600F643EC /* MemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EE48256820B600F643EC /* MemeList.swift */; };
+		0C08EE59256838A300F643EC /* MemeSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EE58256838A300F643EC /* MemeSuggestionView.swift */; };
+		0C08EE5F256846B900F643EC /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 0C08EE5E256846B900F643EC /* WaterfallGrid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 		0C08EE2A2568004400F643EC /* BlossomMemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlossomMemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C08EE2E2568004400F643EC /* BlossomMemeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlossomMemeUITests.swift; sourceTree = "<group>"; };
 		0C08EE302568004400F643EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C08EE4325681D5000F643EC /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		0C08EE48256820B600F643EC /* MemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeList.swift; sourceTree = "<group>"; };
+		0C08EE58256838A300F643EC /* MemeSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeSuggestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C08EE5F256846B900F643EC /* WaterfallGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +114,9 @@
 				0C08EE1A2568004300F643EC /* Info.plist */,
 				0C08EE172568004300F643EC /* BlossomMeme.xcdatamodeld */,
 				0C08EE122568004300F643EC /* Preview Content */,
+				0C08EE4325681D5000F643EC /* BlurView.swift */,
+				0C08EE48256820B600F643EC /* MemeList.swift */,
+				0C08EE58256838A300F643EC /* MemeSuggestionView.swift */,
 			);
 			path = BlossomMeme;
 			sourceTree = "<group>";
@@ -152,6 +163,9 @@
 			dependencies = (
 			);
 			name = BlossomMeme;
+			packageProductDependencies = (
+				0C08EE5E256846B900F643EC /* WaterfallGrid */,
+			);
 			productName = BlossomMeme;
 			productReference = 0C08EE092568004000F643EC /* BlossomMeme.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 0C08EE002568004000F643EC;
+			packageReferences = (
+				0C08EE5D256846B900F643EC /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+			);
 			productRefGroup = 0C08EE0A2568004000F643EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,8 +284,11 @@
 			files = (
 				0C08EE162568004300F643EC /* Persistence.swift in Sources */,
 				0C08EE0F2568004000F643EC /* ContentView.swift in Sources */,
+				0C08EE4425681D5000F643EC /* BlurView.swift in Sources */,
 				0C08EE0D2568004000F643EC /* BlossomMemeApp.swift in Sources */,
 				0C08EE192568004300F643EC /* BlossomMeme.xcdatamodeld in Sources */,
+				0C08EE59256838A300F643EC /* MemeSuggestionView.swift in Sources */,
+				0C08EE49256820B600F643EC /* MemeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C08EE5D256846B900F643EC /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C08EE5E256846B900F643EC /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C08EE5D256846B900F643EC /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0C08EE172568004300F643EC /* BlossomMeme.xcdatamodeld */ = {

@@ -15,22 +15,20 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    @State var show = false
+    @State var showProfile = false
 
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-            }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
+        
+        ZStack (alignment: .top) {
+            // background view
+            BlurView(style: .extraLight)
+            
+            // user memes list
+            MemeList()
+                .blur(radius: show ? 20 : 0)
+                .scaleEffect(showProfile ? 0.95 : 1)
+                .animation(.default)
         }
     }
 
@@ -65,6 +63,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
