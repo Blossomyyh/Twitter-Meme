@@ -4,7 +4,7 @@
 
 #### **Twitter Hackathon**
 
-#### [Devpost](https://devpost.com/software/blossomeme?ref_content=user-portfolio&ref_feature=in_progress) &[Demo](https://www.youtube.com/watch?v=dUHvLKlVRXk&feature=youtu.be) 
+#### [Devpost](https://devpost.com/software/blossomeme?ref_content=user-portfolio&ref_feature=in_progress) & [Demo](https://www.youtube.com/watch?v=dUHvLKlVRXk&feature=youtu.be) 
 
 By Andy Yang, Blossom Yin, Justin Sun, Steve Huang, Vivian Wang
 
