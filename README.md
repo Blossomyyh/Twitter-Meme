@@ -1,8 +1,10 @@
-# BlossomEME
+# BlossoMeme
 
 -------------------------
 
 #### **Twitter Hackathon**
+
+#### [Devpost](https://devpost.com/software/blossomeme?ref_content=user-portfolio&ref_feature=in_progress) &[Demo](https://www.youtube.com/watch?v=dUHvLKlVRXk&feature=youtu.be) 
 
 By Andy Yang, Blossom Yin, Justin Sun, Steve Huang, Vivian Wang
 
@@ -42,12 +44,5 @@ By Andy Yang, Blossom Yin, Justin Sun, Steve Huang, Vivian Wang
 **for the front end, we built our app on iOS platform using Swift UI to implement a friendly user interface for getting the relevant tweets. And we set this cute image as our icon.**
 
 ![09](./src/09.png)
-
--------------------
-
-**Devops & Demo Reference**
-
-​	https://devpost.com/software/blossomeme?ref_content=user-portfolio&ref_feature=in_progress
-
 
 
