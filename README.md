@@ -31,7 +31,7 @@ By Andy Yang, Blossom Yin, Justin Sun, Steve Huang, Vivian Wang
 -  feature vector generation
   -  we utilize a pretrained model MobileNetV2 available at TF hub based on inverted residuals and linear bottlenecks that is proven to be effective on multiple tasks and benchmarks as well as across a spectrum of different model sizes. 
 - the nearest neighbour search. 
-  - After fetching the feature vectors, we perform nearest neighbour search among them to find the memes we are searching for. In particular, we utilize the spotify/annoy packet, usd by Spotify for their music recommendation, to perform nearest neighbour search. [Annoy](http://en.wikipedia.org/wiki/Nearest_neighbor_search#Approximate_nearest_neighborhas the advantage of fast speed and small memory usage and is proven to be of high performance in high-dimensional space, a perfect match for our task.
+  - After fetching the feature vectors, we perform nearest neighbour search among them to find the memes we are searching for. In particular, we utilize the spotify/annoy packet, usd by Spotify for their music recommendation, to perform nearest neighbour search. [Annoy](http://en.wikipedia.org/wiki/Nearest_neighbor_search#Approximate_nearest_neighborhas) the advantage of fast speed and small memory usage and is proven to be of high performance in high-dimensional space, a perfect match for our task.
 
 # API GATEWAY
 
